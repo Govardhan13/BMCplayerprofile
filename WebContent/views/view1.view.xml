@@ -1,0 +1,236 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="bookmycric.player.controllers.view1"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns:f="sap.f">
+	<Page title="Player Profile">
+		<content>
+			<ComboBox placeholder="Search by name" width="500px" items="{/playerProfile}" selectionChange="onChange" id="idCb">
+				<items>
+					<core:Item text="{name}" />
+				</items>
+			</ComboBox>
+
+			<l:BlockLayout>
+				<l:BlockLayoutRow id="idRow">
+					<l:BlockLayoutCell >
+					<HBox>
+						<f:Avatar src="{image}" displaySize="XL"
+							displayShape="Circle" />
+						<Title text="{title}" titleStyle="H1" class="sapUiLargeMarginTop sapUiSmallMarginBegin "/>
+						</HBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+
+				<l:BlockLayoutRow rowColorSet="ColorSet2">
+					<l:BlockLayoutCell width="25%" backgroundColorSet="ColorSet10" backgroundColorShade="ShadeD">
+						<form:SimpleForm id="idSimpleForm">
+							<form:title>
+								<core:Title text="Personal Information" level="H1"/>
+							</form:title>
+							<form:content>
+								<Label text="Born" />
+								<Text text="{born}" />
+								<Label text="Born Place" />
+								<Text text="{bornPlace}" />
+								<Label text="Height" />
+								<Text text="{Height}" />
+								<Label text="Role" />
+								<Text text="{role}" />
+								<Label text="Batting Style" />
+								<Text text="{battingStyle}" />
+								<Label text="Bowling Style" />
+								<Text text="{bowlingStyle}" />
+
+
+
+							</form:content>
+
+						</form:SimpleForm>
+
+
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell width="75%" backgroundColorSet="ColorSet9" backgroundColorShade="ShadeC">
+					  <l:BlockLayout>
+					     <l:BlockLayoutRow>
+					          <l:BlockLayoutCell>
+					          <List id="idList" headerText="Batting Career Summary">
+					          <StandardListItem title="Matches" info="{match}"/>
+					          <StandardListItem title="Innings" info="{innings}"/>
+					          <StandardListItem title="Not Out" info="{notout}"/>
+					          <StandardListItem title="Runs" info="{runs}"/>
+					          <StandardListItem title="High Score" info="{highScore}"/>
+					          <StandardListItem title="Average" info="{avg}"/>
+					          <StandardListItem title="Strick Rate" info="{strickRate}"/>
+					          <StandardListItem title="50s" info="{50s}"/>
+					          <StandardListItem title="30s" info="{30s}"/>
+					          <StandardListItem title="20s" info="{20s}"/>
+					          <StandardListItem title="4s" info="{4s}"/>
+					          <StandardListItem title="6s" info="{6s}"/>
+					          
+					          
+					          </List>
+					
+<!-- 						<Table headerText="Batting Career Summary" id="idTable">
+							
+							<columns>
+								<Column 	minScreenWidth="Tablet"
+				                            demandPopin="true">
+									<Text text="M" />
+								</Column>
+								<Column 	minScreenWidth="Desktop"
+				                            demandPopin="true" >
+									<Text text="Inn" />
+								</Column>
+								<Column  	minScreenWidth="Desktop"
+				                             demandPopin="true">
+									<Text text="NO" />
+								</Column>
+								<Column >
+
+									<Text text="Runs" />
+								</Column>
+								<Column >
+									<Text text="HS" />
+								</Column>
+								<Column >
+									<Text text="Avg" />
+								</Column>
+								
+								<Column >
+									<Text text="SR" />
+								</Column>
+								<Column >
+									<Text text="50s" />
+								</Column>
+								<Column >
+									<Text text="30s" />
+								</Column>
+								<Column >
+									<Text text="20s" />
+								</Column>
+								<Column >
+									<Text text="4s" />
+								</Column>
+								<Column >
+									<Text text="6s" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+									
+										<Text text="{match}" />
+										<Text text="{innings}" />
+										<Text text="{notout}" />
+										<Text text="{runs}" />
+										<Text text="{highScore}" />
+										<Text text="{avg}" />
+										<Text text="{strickRate}" />
+										<Text text="{50s}" />
+										<Text text="{30s}" />
+										<Text text="{20s}" />
+										<Text text="{4s}" />
+										<Text text="{6s}" />
+
+									</cells>
+								</ColumnListItem>
+								
+								
+								
+							</items>
+						</Table> -->
+                         </l:BlockLayoutCell>
+                         </l:BlockLayoutRow>
+                         <l:BlockLayoutRow>
+                         <l:BlockLayoutCell>
+                         <List id="idList1" headerText="Bowling Career Summary">
+					          <StandardListItem title="Mathes" info="{mathes}"/>
+					          <StandardListItem title="Innings" info="{innings}"/>
+					          <StandardListItem title="Bals Bowled" info="{bowled}"/>
+					          <StandardListItem title="Runs" info="{runs}"/>
+					          <StandardListItem title="Wickets" info="{wickets}"/>
+					          <StandardListItem title="Best" info="{best}"/>
+					          <StandardListItem title="Economy" info="{economy}"/>
+					          <StandardListItem title="Average" info="{avg}"/>
+					          <StandardListItem title="Strick Rate" info="{strickRate}"/>
+					          <StandardListItem title="4W" info="{4W}"/>
+					          <StandardListItem title="3W" info="{3W}"/>
+					          
+					          
+					          
+					          </List>
+						<!-- <Table headerText="Bowling Career Summary" id="idTable1" class="sapUiLargeMarginTop">
+							
+							<columns>
+								<Column >
+									<Text text="M" />
+								</Column>
+								<Column >
+									<Text text="Inn" />
+								</Column>
+								<Column >
+									<Text text="B" />
+								</Column>
+								<Column >
+
+									<Text text="Runs" />
+								</Column>
+								<Column >
+									<Text text="Wkts" />
+								</Column>
+								<Column >
+									<Text text="Best" />
+								</Column>
+								<Column >
+									<Text text="Econ" />
+								</Column>
+								<Column >
+									<Text text="Avg" />
+								</Column>
+								<Column >
+									<Text text="SR" />
+								</Column>
+								<Column >
+									<Text text="4W" />
+								</Column>
+								<Column >
+									<Text text="3W" />
+								</Column>
+								
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{mathes}" />
+										<Text text="{innings}" />
+										<Text text="{bowled}" />
+										<Text text="{runs}" />
+										<Text text="{wickets}" />
+										<Text text="{best}" />
+										<Text text="{economy}" />
+										<Text text="{avg}" />
+										<Text text="{strickRate}" />
+										<Text text="{4W}" />
+										<Text text="{3W}" />
+
+									</cells>
+								</ColumnListItem>
+								
+							</items>
+						</Table> -->
+						</l:BlockLayoutCell>
+                                </l:BlockLayoutRow>
+                           </l:BlockLayout>
+					</l:BlockLayoutCell>
+
+
+
+
+
+
+				</l:BlockLayoutRow>
+			</l:BlockLayout>
+
+		</content>
+	</Page>
+</core:View>

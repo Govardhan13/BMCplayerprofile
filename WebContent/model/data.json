@@ -1,0 +1,134 @@
+{
+	
+"playerProfile" : [
+	{
+		"name" : "Govardhan",
+		"profile" : {
+		     "image" : "images/gouri.jpg",
+		     "title" : "Govardhan Naik",
+		"details" : {
+			"born" : "14th April 1992",
+			"bornPlace" : "Bhairapur",
+			"Height" : "5 ft 7 in(175cm)",
+			"role" : "Batsman",
+			"battingStyle" : "Right Handed Bat",
+			"bowlingStyle" : "Right-arm medium",
+		"battingcareer" : {
+			"match" : 208,
+			"innings" : 200,
+			"notout" : 35,
+			"runs" : 9588,
+			"highScore" : 183,
+			"avg" : 58.11,
+			"strickRate" : 92.15,
+			"50s" : 35,
+			"30s" : 0,
+			"20s" : 46,
+			"4s" : 893,
+			"6s" : 105,
+		"bowlingCareer" : {
+			"mathes" : 208,
+			"innings" : 48,
+			"bowled" : 641,
+			"runs" : 665,
+			"wickets" : 4,
+			"best" : "15/1",
+			"economy" : 6.22,
+			"avg" : 166.25, 
+			"strickRate" : 160.25,
+			"4W" : 0,
+			"3W" : 0
+		}
+		}	
+		
+		}
+		}
+	},
+	{
+		"name" : "Prasanth",
+		"profile" : {
+		     "image" : "images/prasanth.jpg"	,
+		     "title" : "Prasanth",
+		"details" : {
+			"born" : "14th April 1993",
+			"bornPlace" : "Nalgonda",
+			"Height" : "6 ft 7 in(175cm)",
+			"role" : "Batsman",
+			"battingStyle" : "Right Handed Bat",
+			"bowlingStyle" : "Right-arm medium",
+			"battingcareer" : {
+				"match" : 250,
+				"innings" : 222,
+				"notout" : 38,
+				"runs" : 10000,
+				"highScore" : 200,
+				"avg" : 60.11,
+				"strickRate" : 101.15,
+				"50s" : 40,
+				"30s" : 2,
+				"20s" : 52,
+				"4s" : 912,
+				"6s" : 150,
+				"bowlingCareer" : {
+					"mathes" : 250,
+					"innings" : 100,
+					"bowled" : 1000,
+					"runs" : 999,
+					"wickets" : 50,
+					"best" : "15/5",
+					"economy" : 3.22,
+					"avg" : 166.25, 
+					"strickRate" : 160.25,
+					"4W" : 1,
+					"3W" : 3
+				}
+			}	
+		}
+		}
+	},
+	{
+		"name" : "Janardhan Naik",
+		"profile" : {
+		     "image" : "images/jani.jpg",
+		     "title" : "Janardhan Naik",
+		"details" : {
+			"born" : "14th April 1990",
+			"bornPlace" : "Bhairapur",
+			"Height" : "5 ft 7 in(175cm)",
+			"role" : "Batsman",
+			"battingStyle" : "Right Handed Bat",
+			"bowlingStyle" : "Right-arm medium",
+		"battingcareer" : {
+			"match" : 208,
+			"innings" : 200,
+			"notout" : 35,
+			"runs" : 9588,
+			"highScore" : 183,
+			"avg" : 58.11,
+			"strickRate" : 92.15,
+			"50s" : 35,
+			"30s" : 0,
+			"20s" : 46,
+			"4s" : 893,
+			"6s" : 105,
+		"bowlingCareer" : {
+			"mathes" : 208,
+			"innings" : 48,
+			"bowled" : 641,
+			"runs" : 665,
+			"wickets" : 4,
+			"best" : "15/1",
+			"economy" : 6.22,
+			"avg" : 166.25, 
+			"strickRate" : 160.25,
+			"4W" : 0,
+			"3W" : 0
+		}
+		}	
+		
+		}
+		}
+	}
+]
+
+} 
